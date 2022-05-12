@@ -23,7 +23,7 @@ function myButtonClicked() {
   var answer = 0;
 
   if (counter1 > 0 && counter2 > 0) {
-    while (addedNumber < counter2) {
+    while (addedNumber > counter2) {
       addedNumber = addedNumber - 1;
       answer = answer - counter1;
     }
