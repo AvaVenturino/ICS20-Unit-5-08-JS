@@ -8,8 +8,8 @@
  * Check servie worker.
  */
 if (navigator.serviceWorker) {
-  navigator.serviceWorker.register("/ICS20-Unit-5-06-JS/sw.js", {
-    scope: "/ICS20-Unit-5-06-JS/",
+  navigator.serviceWorker.register("/ICS20-Unit-5-08-JS/sw.js", {
+    scope: "/ICS20-Unit-5-08-JS/",
   });
 }
 
@@ -23,21 +23,6 @@ function myButtonClicked() {
   var answer = 0;
 
   if (counter1 > 0 && counter2 > 0) {
-    while (addedNumber > counter2) {
-      addedNumber = addedNumber - 1;
-      answer = answer - counter1;
-    }
-  } else if (counter1 < 0 && counter2 < 0) {
-    while (addedNumber > counter2) {
-      addedNumber = addedNumber - 1;
-      answer = answer - counter1;
-    }
-  } else if (counter1 > 0 && counter2 < 0) {
-    while (addedNumber > counter2) {
-      addedNumber = addedNumber - 1;
-      answer = answer - counter1;
-    }
-  } else if (counter1 < 0 && counter2 > 0) {
     while (addedNumber < counter2) {
       addedNumber = addedNumber + 1;
       answer = answer + counter1;
