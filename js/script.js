@@ -17,17 +17,14 @@ if (navigator.serviceWorker) {
  * Input
  */
 function myButtonClicked() {
-  const counter1 = parseInt(document.getElementById("counter1").value);
-  const counter2 = parseInt(document.getElementById("counter2").value);
-  var addedNumber = 0;
-  var answer = 0;
-
-  if (counter1 > 0 && counter2 > 0) {
-    while (addedNumber < counter2) {
-      addedNumber = addedNumber + 1;
-      answer = answer + counter1;
+  const dividend = parseInt(document.getElementById("dividend").value);
+  const divisor = parseInt(document.getElementById("divisor").value);
+  var result = 0;
+  
+    while(dividend >= divisor){
+        dividend - divisor
+        result++;
     }
-  }
   document.getElementById("answer").innerHTML =
-    counter1 + " x " + addedNumber + " = " + answer;
+     " The answer would be " + result;
 }
