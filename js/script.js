@@ -37,5 +37,11 @@ function myButtonClicked() {
   }
 
   document.getElementById("answer").innerHTML =
-    number1 + " ÷ " + number2 + " = " + addedNumber + " The remainder is " + remainder;
+    number1 + 
+    " ÷ " + 
+    number2 + 
+    " = " + 
+    addedNumber + 
+    " The remainder is " + 
+    remainder;
 }
